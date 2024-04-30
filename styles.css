@@ -41,8 +41,7 @@ body {
 
 .button {
     flex: 1;
-    margin: 4px;
-    border: solid;
-    border-width: 2px;
+    margin: 0.8px;
     border-radius: 10px;
+    background-color: lightgrey;
 }
