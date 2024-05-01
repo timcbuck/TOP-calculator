@@ -58,3 +58,14 @@ body {
 .button-fill {
     background-color: rgb(185, 184, 184);
 }
+
+#clear {
+    background-color: lightcoral;
+}
+
+#multiply,
+#divide,
+#add,
+#subtract {
+    background-color: lightblue;
+}

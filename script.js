@@ -4,21 +4,6 @@ let result = 0;
 let operation = "";
 
 
-function buttonFillOnHover() {
-    let buttons = document.querySelectorAll(".button");
-    buttons.forEach((button) => {
-        button.addEventListener("mouseover", (event) => {
-            //event.target.style.backgroundColor = fillColor;
-            event.target.classList.add("button-fill");
-        });
-        button.addEventListener("mouseout", (event) => {
-            //event.target.style.backgroundColor = fillColor;
-            event.target.classList.remove("button-fill");
-        });
-    });
-}
-
-
 function checkMaxNumberReached(val) {
     if (val.length > 9) {
         return "9999999999";
@@ -57,6 +42,7 @@ function clearDisplay() {
 function getDisplayNumber() {
     return document.querySelector('.display').innerText;
 }
+
 
 function add() {
     /*
@@ -137,11 +123,22 @@ function equals() {
     secondNumber = getDisplayNumber();
     // Pass the global firstNumber, secondNumber and operation variables to the operate function
     operate(firstNumber, secondNumber, operation);
+    operation = "";
 }
 
 
-function clickNumber() {
-
+function buttonFillOnHover() {
+    let buttons = document.querySelectorAll(".button");
+    buttons.forEach((button) => {
+        button.addEventListener("mouseover", (event) => {
+            //event.target.style.backgroundColor = fillColor;
+            event.target.classList.add("button-fill");
+        });
+        button.addEventListener("mouseout", (event) => {
+            //event.target.style.backgroundColor = fillColor;
+            event.target.classList.remove("button-fill");
+        });
+    });
 }
 
 
