@@ -10,7 +10,9 @@
 <body>
     <h2>Calculator</h2>
     <div class="calculator">
+        <div class="previousNumber"></div>
         <div class="display">
+            
             0
         </div>
         <div class="button-container">
@@ -24,16 +26,16 @@
                 <div class="button" onclick="updateDisplay(4)">4</div>
                 <div class="button" onclick="updateDisplay(5)">5</div>
                 <div class="button" onclick="updateDisplay(6)">6</div>
-                <div class="button" id="multiply" onclick="multiply()">X</div>
+                <div class="button" id="multiply" onclick="multiply()">&times</div>
             </div>
             <div class="button-row">
                 <div class="button" onclick="updateDisplay(1)">1</div>
                 <div class="button" onclick="updateDisplay(2)">2</div>
                 <div class="button" onclick="updateDisplay(3)">3</div>
-                <div class="button" id="divide" onclick="divide()">/</div>
+                <div class="button" id="divide" onclick="divide()">&divide</div>
             </div>
             <div class="button-row">
-                <div class="button" id="subtract" onclick="subtract()">-</div>
+                <div class="button" id="subtract" onclick="subtract()">&#8722</div>
                 <div class="button" onclick="updateDisplay(0)">0</div>
                 <div class="button" id="add" onclick="add()">+</div>
                 <div class="button" id="equals" onclick="equals()">=</div>
